@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="addProperty" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+
+    </style>
+
+    <style name="text_connexion_title">
+        <item name="android:textSize">@dimen/text_24</item>
+        <item name="android:textColor">@color/icons</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_edit_connection">
+        <item name="android:textSize">@dimen/text_18</item>
+        <item name="android:textColor">@color/icons</item>
+        <item name="android:padding">@dimen/margin_10</item>
+    </style>
+
+    <style name="text_item_property">
+        <item name="android:textSize">@dimen/text_18</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_item_detail">
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:layout_margin">@dimen/margin_5</item>
+    </style>
+
+    <style name="text_item_price">
+        <item name="android:textSize">@dimen/text_24</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="edit_text_add">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:padding">@dimen/margin_10</item>
+    </style>
+
+    <style name="text_title_simulator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/text_18</item>
+        <item name="android:padding">@dimen/margin_10</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_simulator">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:padding">@dimen/margin_5</item>
+        <item name="android:textColor">@color/icons</item>
+    </style>
+
+    <style name="cardview">
+        <item name="cardCornerRadius">@dimen/margin_5</item>
+        <item name="android:layout_margin">@dimen/margin_2</item>
+    </style>
+
+</resources>
+

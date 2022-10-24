@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundActivity"
+    tools:context=".ui.activity.AddPropertyActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_55"
+        android:layout_marginBottom="@dimen/image_height_65"
+        android:padding="@dimen/margin_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                style="@style/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/layout_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:layout_height="match_parent"
+                        android:text="@string/type"
+                        style="@style/edit_text_add"
+                        android:textColor="@color/primary"
+                        android:drawableLeft="@drawable/ic_type"
+                        android:drawableTint="@color/primary"
+                        android:drawablePadding="@dimen/margin_5"
+                        android:layout_gravity="center"/>
+
+                    <Spinner
+                        android:id="@+id/spinner_type"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_item_property"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_2"
+                    android:gravity="center"
+                    android:text="@string/technical_informations" />
+
+                <View
+                    android:id="@+id/separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/backgroundActivity"
+                    android:paddingStart="@dimen/margin_2"
+                    android:paddingEnd="@dimen/margin_2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_2"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/property_area"
+                        android:textColorHint="@color/primary"
+                        app:hintTextColor="@color/primary"
+                        app:startIconDrawable="@drawable/ic_area"
+                        app:startIconTint="@color/primary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/text_area"
+                            style="@style/edit_text_add"
+                            android:layout_height="wrap_content"
+                            android:inputType="number" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_2"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/number_of_room"
+                        android:textColorHint="@color/primary"
+                        app:hintTextColor="@color/primary"
+                        app:startIconDrawable="@drawable/ic_home"
+                        app:startIconTint="@color/primary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/card_rooms"
+                            style="@style/edit_text_add"
+                            android:layout_height="wrap_content"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_2"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/number_of_bedroom"
+                        android:textColorHint="@color/primary"
+                        app:hintTextColor="@color/primary"
+                        app:startIconDrawable="@drawable/ic_bedroom"
+                        app:startIconTint="@color/primary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/card_bedroom"
+                            style="@style/edit_text_add"
+                            android:layout_height="wrap_content"
+                            android:inputType="number" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_2"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/number_of_bathroom"
+                        android:textColorHint="@color/primary"
+                        app:hintTextColor="@color/primary"
+                        app:startIconDrawable="@drawable/ic_bath"
+                        app:startIconTint="@color/primary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/card_bathroom"
+                            style="@style/edit_text_add"
+                            android:layout_height="wrap_content"
+                            android:inputType="number" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                style="@style/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/street"
+                    android:textColorHint="@color/primary"
+                    app:hintTextColor="@color/primary"
+                    app:startIconDrawable="@drawable/ic_location"
+                    app:startIconTint="@color/primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/card_street"
+                        style="@style/edit_text_add"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/town"
+                    android:textColorHint="@color/primary"
+                    app:hintTextColor="@color/primary"
+                    app:startIconDrawable="@drawable/ic_location"
+                    app:startIconTint="@color/primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/card_town"
+                        style="@style/edit_text_add"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_infos"
+                style="@style/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/property_description"
+                    android:textColorHint="@color/primary"
+                    app:hintTextColor="@color/primary"
+                    app:startIconDrawable="@drawable/ic_description"
+                    app:startIconTint="@color/primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/card_description"
+                        style="@style/edit_text_add"
+                        android:layout_height="match_parent"
+                        android:inputType="textLongMessage" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/property_price"
+                        android:textColorHint="@color/primary"
+                        app:hintTextColor="@color/primary"
+                        app:startIconDrawable="@drawable/ic_monetization"
+                        app:startIconTint="@color/primary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/card_price"
+                            style="@style/edit_text_add"
+                            android:layout_height="wrap_content"
+                            android:inputType="number" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_hospital"
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            android:layout_width="@dimen/image_200"
+                            android:layout_height="@dimen/margin_75"
+                            android:layout_margin="@dimen/margin_5"
+                            android:text="@string/hospital"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textColor="@color/icons"
+                            app:chipBackgroundColor="@color/primary"
+                            app:chipIcon="@drawable/ic_hospital"
+                            app:chipIconSize="@dimen/height_50"
+                            app:chipIconEnabled="true" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_school"
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            android:layout_width="@dimen/image_200"
+                            android:layout_height="@dimen/margin_75"
+                            android:layout_margin="@dimen/margin_5"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:text="@string/school"
+                            android:textStyle="bold"
+                            android:textColor="@color/icons"
+                            app:chipBackgroundColor="@color/primary"
+                            app:chipIcon="@drawable/ic_school"
+                            app:chipIconSize="@dimen/height_50"
+                            app:chipIconEnabled="true" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_market"
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            android:layout_width="@dimen/image_200"
+                            android:layout_height="@dimen/margin_75"
+                            android:layout_margin="@dimen/margin_5"
+                            android:text="@string/market"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textColor="@color/icons"
+                            app:chipBackgroundColor="@color/primary"
+                            app:chipIcon="@drawable/ic_type"
+                            app:chipIconSize="@dimen/height_50"
+                            app:chipIconEnabled="true"
+                            app:chipIconVisible="true" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/edit_text_add"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="50"
+                            android:drawableStart="@drawable/ic_date"
+                            android:drawablePadding="@dimen/margin_10"
+                            android:drawableTint="@color/primary"
+                            android:padding="@dimen/margin_10"
+                            android:text="@string/entry_date"
+                            tools:targetApi="m" />
+
+                        <TextView
+                            android:id="@+id/date_on_sale"
+                            style="@style/edit_text_add"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="50"
+                            android:padding="@dimen/margin_10"
+                            tools:text="24/02/2020" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_compromise_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <CheckBox
+                            android:id="@+id/check_compromise"
+                            style="@style/edit_text_add"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_5"
+                            android:layout_weight="50"
+                            android:buttonTint="@color/primary"
+                            android:text="@string/compromise_signed"
+                            tools:targetApi="lollipop" />
+
+                        <TextView
+                            android:id="@+id/date_compromise"
+                            style="@style/edit_text_add"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="50"
+                            android:padding="@dimen/margin_10"
+                            tools:text="24/02/2020" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_sold_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <CheckBox
+                            android:id="@+id/check_sold"
+                            style="@style/edit_text_add"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_5"
+                            android:layout_weight="50"
+                            android:buttonTint="@color/primary"
+                            android:text="@string/sold_date"
+                            tools:targetApi="lollipop" />
+
+                        <TextView
+                            android:id="@+id/date_sold"
+                            style="@style/edit_text_add"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="50"
+                            android:padding="@dimen/margin_10"
+                            tools:text="24/02/2020" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/item_photo_detail" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        style="@style/Widget.MaterialComponents.BottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/primary"
+        app:fabAlignmentMode="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_16"
+            android:weightSum="3">
+
+            <ImageButton
+                android:id="@+id/camera"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/camera_button"
+                app:srcCompat="@drawable/ic_camera"
+                app:tint="@color/icons" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/none" />
+
+            <ImageButton
+                android:id="@+id/gallery"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/gallery_button"
+                app:srcCompat="@drawable/ic_image" />
+        </LinearLayout>
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary"
+        app:layout_anchor="@id/bottomAppBar"
+        app:srcCompat="@drawable/ic_add_circle"
+        app:tint="@color/icons"
+        tools:ignore="UnusedAttribute" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary_light"
+        android:visibility="gone"
+        app:layout_anchor="@id/bottomAppBar"
+        app:layout_anchorGravity="top|center"
+        app:srcCompat="@drawable/ic_update"
+        app:tint="@color/primary"
+        tools:ignore="UnusedAttribute" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

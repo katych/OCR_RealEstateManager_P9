@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_property"
+                android:icon="@drawable/ic_home"
+                android:title="@string/home"/>
+            <item
+                android:id="@+id/nav_simulation"
+                android:icon="@drawable/ic_monetization"
+                android:title="@string/simulation"/>
+            <item
+                android:id="@+id/nav_map"
+                android:icon="@drawable/ic_map"
+                android:title="@string/map"/>
+
+        </group>
+
+    <item android:title="@string/logout">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_power"
+                android:title="@string/logout"
+                android:onClick="logOutApplication"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/addProperty"
+    tools:context=".ui.activity.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_50"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/your_name"
+            android:textColorHint="@color/primary"
+            app:hintTextColor="@color/primary"
+            app:startIconDrawable="@drawable/ic_profile"
+            app:startIconTint="@color/primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/your_mail"
+            android:textColorHint="@color/primary"
+            app:hintTextColor="@color/primary"
+            app:startIconDrawable="@drawable/ic_mail"
+            app:startIconTint="@color/primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mail_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/your_password"
+            android:textColorHint="@color/primary"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/primary"
+            app:hintTextColor="@color/primary"
+            app:startIconDrawable="@drawable/ic_security"
+            app:startIconTint="@color/primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm_your_password"
+            android:textColorHint="@color/primary"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/primary"
+            app:hintTextColor="@color/primary"
+            app:startIconDrawable="@drawable/ic_confirm"
+            app:startIconTint="@color/primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirm_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/telephone_number"
+            android:textColorHint="@color/primary"
+            app:hintTextColor="@color/primary"
+            app:startIconDrawable="@drawable/ic_phone"
+            app:startIconTint="@color/primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tel_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_avatar"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/your_avatar"
+            android:textColorHint="@color/primary"
+            app:hintTextColor="@color/primary"
+            app:startIconDrawable="@drawable/ic_image"
+            app:startIconTint="@color/primary"
+            android:orientation="vertical"
+           >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/avatar_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/margin_5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_your_profile_picture"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/text_16"
+                android:padding="@dimen/margin_14"
+                android:paddingRight="@dimen/margin_5"
+                />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floating_add_avatar_register"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                app:srcCompat="@drawable/ic_camera_gallery"
+             />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/register_button_register"
+        style="@style/text_item_property"
+        android:layout_width="@dimen/width_200"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:background="@drawable/border_radius"
+        android:clickable="true"
+        android:drawableStart="@drawable/ic_check"
+        android:focusable="true"
+        android:onClick="onClickRegisterButtonRegister"
+        android:padding="@dimen/margin_10"
+        android:text="@string/register"
+        android:textColor="@color/primary" />
+
+</RelativeLayout>
+

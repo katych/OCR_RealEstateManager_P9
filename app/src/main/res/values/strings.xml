@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">Real Estate Manager</string>
+
+    <!-- navigation drawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="avatar">avatar</string>
+
+    <!-- menu drawer -->
+    <string name="home">Property for sale</string>
+    <string name="simulation">Simulation</string>
+    <string name="settings">Tools</string>
+    <string name="logout">Logout</string>
+    <string name="map">Map view</string>
+    <string name="my_profile">my profile</string>
+    <string name="send_new_property">Send new property</string>
+    <string name="money_used">Money used</string>
+    <string name="filter">Filter</string>
+
+    <!-- connexion activity -->
+    <string name="welcome_on_real_estate_manager">Welcome on Real Estate Manager</string>
+    <string name="your_name">Your name</string>
+    <string name="your_password">Your password</string>
+    <string name="connexion">Connexion</string>
+    <string name="remember_me">Remember me</string>
+    <string name="property_image">property image</string>
+    <string name="register">Register</string>
+    <string name="your_mail">Your mail</string>
+    <string name="telephone_number">Telephone number</string>
+    <string name="your_avatar">Your avatar</string>
+    <string name="choose_your_profile_picture">Choose or take your profile picture :</string>
+    <!-- Profile text -->
+    <string name="modify_your_avatar">Modify your avatar</string>
+    <string name="confirm">Confirm</string>
+    <string name="modify_your_mail">Modify your mail</string>
+    <string name="modify_your_telephone_number">Modify your telephone number</string>
+    <string name="confirm_your_password">Confirm your password</string>
+    <string name="modify_your_password">Modify your password</string>
+    <string name="your_login">Your login :</string>
+    <string name="tel">Tel :</string>
+    <string name="modify_your_profile">Modify your profile</string>
+    <string name="give_your_mail">Current email :</string>
+    <!-- Detail page -->
+    <string name="image_detail">image detail</string>
+    <string name="number_of_room">Number of room</string>
+    <string name="number_of_bedroom">Number of bedroom</string>
+    <string name="number_of_bathroom">Number of bathroom</string>
+    <string name="property_area">Property area</string>
+    <string name="location">Location</string>
+    <string name="devise_dollars">$ %1$s</string>
+    <string name="devise_euros">€ %1$s</string>
+
+    <!-- Add activity-->
+    <string name="type">Type</string>
+    <string name="street">Street</string>
+    <string name="town">Town</string>
+    <string name="technical_informations">Technical informations</string>
+    <string name="property_description">Property description</string>
+    <string name="property_price">Property price</string>
+    <string name="status">Status</string>
+    <string name="photo_name">Photo name</string>
+    <string name="ok">OK</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="error_message_add">You must enter valid informations.</string>
+    <string name="entry_date">Entry date :</string>
+    <string name="compromise_signed">Compromise signed</string>
+    <string name="sold_date">Sold date</string>
+    <string name="update_property_informations">Update property informations</string>
+    <string name="camera_button">camera button</string>
+    <string name="none">none</string>
+    <string name="gallery_button">gallery button</string>
+    <string name="delete_message">Do you want to delete this picture?</string>
+    <string name="hospital">Hospital</string>
+    <string name="school">School</string>
+    <string name="market">Market</string>
+    <string name="estate_not_complete">Estate not complete</string>
+
+    <!-- Simulator -->
+    <string name="type_of_property">Type of property</string>
+    <string name="new_property">New</string>
+    <string name="old">Old</string>
+    <string name="borrower">Borrower :</string>
+    <string name="alone">Alone</string>
+    <string name="in_couple">In Couple</string>
+    <string name="borrower_income">Borrower income</string>
+    <string name="co_borrower_income">Co-borrower income</string>
+    <string name="personal_contribution">personal contribution</string>
+    <string name="calculate_monthly_payments">calculate monthly payments</string>
+    <string name="simulation_1">Simulation 1 :</string>
+    <string name="simulation_2">Simulation 2 :</string>
+    <string name="project_cost">Project cost :</string>
+    <string name="notary_fees">Notary fees :</string>
+    <string name="mortgage">Mortgage :</string>
+    <string name="borrowing">Borrowing :</string>
+    <string name="year">Year :</string>
+    <string name="rate">Rate :</string>
+    <string name="monthly_payment">Monthly payment:</string>
+    <string name="property_cost">Property cost</string>
+    <string name="go_to_detail_page">Go to detail page</string>
+    <string name="payment_capacity">Payment capacity</string>
+
+    <!-- filter option -->
+    <string name="min_price">min price</string>
+    <string name="max_price">max price</string>
+    <string name="min_room_number">Min room number</string>
+    <string name="max_room_number">Max room number</string>
+    <string name="max_area">Max area</string>
+    <string name="min_area">Min area</string>
+    <string name="number_of_picture">Number of picture</string>
+    <string name="manor">Manor</string>
+    <string name="penthouse">Penthouse</string>
+    <string name="loft">Loft</string>
+    <string name="house">House</string>
+    <string name="on_sale">On sale</string>
+    <string name="sold">Sold</string>
+    <string name="filter_properties">Filter properties</string>
+    <string name="no_property_for_this_filter">No property for this filter</string>
+    <string name="cancel">Cancel</string>
+    <string name="date">%1$s/%2$s/%3$d</string>
+
+    <!-- Map -->
+    <string name="no_internet">No internet connexion.</string>
+    <string name="image_map_button">Image map button</string>
+    <string name="button_filter">button filter</string>
+    <string name="no_filter">No filter</string>
+    <string name="vendu">vendu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="error_unknown_error">An error occurred</string>
+
+    <!-- Firebase query -->
+    <string name="error_query">Error getting documents : %s</string>
+
+
+</resources>

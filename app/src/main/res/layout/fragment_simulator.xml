@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.SimulatorFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_title_simulator"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:text="@string/type_of_property" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radio_new"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                app:buttonTint="@color/primary"
+                android:padding="@dimen/margin_10"
+                android:text="@string/new_property" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radio_old"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                app:buttonTint="@color/primary"
+                android:padding="@dimen/margin_10"
+                android:text="@string/old" />
+
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_title_simulator"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:text="@string/borrower" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radio_alone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                app:buttonTint="@color/primary"
+                android:padding="@dimen/margin_10"
+                android:text="@string/alone" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radio_couple"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:buttonTint="@color/primary"
+                android:padding="@dimen/margin_10"
+                android:text="@string/in_couple" />
+
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/borrower_income"
+                android:textColorHint="@color/primary"
+                app:hintTextColor="@color/primary"
+                app:startIconDrawable="@drawable/ic_sale"
+                app:startIconTint="@color/primary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_revenu"
+                    style="@style/edit_text_add"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:id="@+id/co_borrower_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/co_borrower_income"
+                android:textColorHint="@color/primary"
+                android:visibility="gone"
+                app:hintTextColor="@color/primary"
+                app:startIconDrawable="@drawable/ic_sale"
+                app:startIconTint="@color/primary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_revenu_coemprunteur"
+                    style="@style/edit_text_add"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/personal_contribution"
+                android:textColorHint="@color/primary"
+                app:hintTextColor="@color/primary"
+                app:startIconDrawable="@drawable/ic_sale"
+                app:startIconTint="@color/primary"
+                android:layout_margin="@dimen/margin_2">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_apport"
+                    style="@style/edit_text_add"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/property_cost"
+                android:textColorHint="@color/primary"
+                app:hintTextColor="@color/primary"
+                app:startIconDrawable="@drawable/ic_sale"
+                app:startIconTint="@color/primary"
+                android:layout_margin="@dimen/margin_2">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_cost"
+                    style="@style/edit_text_add"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_calculate"
+            style="@style/edit_text_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/border_radius"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_functions"
+            android:drawablePadding="@dimen/margin_10"
+            android:focusable="true"
+            android:text="@string/calculate_monthly_payments"
+            android:textColor="@color/icons" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/layout_simulator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="@dimen/width_30dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_2"
+                android:layout_weight="50"
+                android:background="@color/primary_dark"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_title_simulator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/simulation_1"
+                    android:textColor="@color/icons" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:text="@string/project_cost" />
+
+                    <TextView
+                        android:id="@+id/project_cost"
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        tools:text="20" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:text="@string/notary_fees" />
+
+                    <TextView
+                        android:id="@+id/notary_fees"
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        tools:text="20" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:text="@string/mortgage" />
+
+                    <TextView
+                        android:id="@+id/mortgage1"
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        tools:text="20" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:text="@string/personal_contribution" />
+
+                    <TextView
+                        android:id="@+id/personal_contribution"
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        tools:text="20" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:text="@string/borrowing" />
+
+                    <TextView
+                        android:id="@+id/borrowing1"
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        android:textColor="@color/primary"
+                        tools:text="200 000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:text="@string/year" />
+
+                    <TextView
+                        android:id="@+id/year1"
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        tools:text="20" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:text="@string/rate" />
+
+                    <TextView
+                        android:id="@+id/rate1"
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        tools:text="20" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:text="@string/monthly_payment" />
+
+                    <TextView
+                        android:id="@+id/payment"
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        tools:text="12220" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:text="@string/payment_capacity" />
+
+                    <TextView
+                        android:id="@+id/paymentCapacity_1"
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        tools:text="12220" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/width_30dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_2"
+                android:layout_weight="50"
+                android:background="@color/primary"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_title_simulator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/simulation_2"
+                    android:textColor="@color/icons" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:text="@string/project_cost" />
+
+                    <TextView
+                        android:id="@+id/project_cost2"
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        tools:text="20" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:text="@string/notary_fees" />
+
+                    <TextView
+                        android:id="@+id/notary_fees2"
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        tools:text="20" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:text="@string/mortgage" />
+
+                    <TextView
+                        android:id="@+id/mortgage2"
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        tools:text="20" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:text="@string/personal_contribution" />
+
+                    <TextView
+                        android:id="@+id/personal_contribution2"
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        tools:text="20" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:text="@string/borrowing" />
+
+                    <TextView
+                        android:id="@+id/borrowing2"
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        android:textColor="@color/primary"
+                        tools:text="200 000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:text="@string/year" />
+
+                    <TextView
+                        android:id="@+id/year_2"
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        tools:text="20" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:text="@string/rate" />
+
+                    <TextView
+                        android:id="@+id/rate_2"
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        tools:text="20" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:text="@string/monthly_payment" />
+
+                    <TextView
+                        android:id="@+id/payment2"
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        tools:text="12220" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:text="@string/payment_capacity" />
+
+                    <TextView
+                        android:id="@+id/paymentCapacity_2"
+                        style="@style/text_simulator"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        tools:text="12220" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</ScrollView>

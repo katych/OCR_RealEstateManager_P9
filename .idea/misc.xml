@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../layout/custom_preview.xml" value="0.11810551558752998" />
+        <entry key="../Library/Android/sdk/platforms/android-32/data/res/layout/simple_spinner_item.xml" value="0.21354166666666666" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1705" />
+        <entry key="app/src/main/res/drawable/border_radius.xml" value="0.213" />
+        <entry key="app/src/main/res/drawable/ic_baseline_camera_alt_24.xml" value="0.27" />
+        <entry key="app/src/main/res/drawable/ic_camera.xml" value="0.266" />
+        <entry key="app/src/main/res/drawable/ic_camera2.xml" value="0.27" />
+        <entry key="app/src/main/res/drawable/ic_camera_garlly.xml" value="0.27" />
+        <entry key="app/src/main/res/drawable/ic_clear.xml" value="0.1925" />
+        <entry key="app/src/main/res/drawable/ic_hospital.xml" value="0.266" />
+        <entry key="app/src/main/res/drawable/ic_image_round.xml" value="0.125" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1705" />
+        <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1705" />
+        <entry key="app/src/main/res/drawable/ic_launcher_round.xml" value="0.1705" />
+        <entry key="app/src/main/res/drawable/ic_school.xml" value="0.266" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.2635" />
+        <entry key="app/src/main/res/drawable/ic_security.xml" value="0.27" />
+        <entry key="app/src/main/res/drawable/ic_type.xml" value="0.266" />
+        <entry key="app/src/main/res/layout-sw600dp-land/activity_addproperty.xml" value="0.40816326530612246" />
+        <entry key="app/src/main/res/layout-sw600dp-land/activity_connexion.xml" value="0.4166146158650843" />
+        <entry key="app/src/main/res/layout-sw600dp-land/activity_main.xml" value="0.40816326530612246" />
+        <entry key="app/src/main/res/layout-sw600dp-land/appbar_main.xml" value="0.2789115646258503" />
+        <entry key="app/src/main/res/layout-sw600dp-land/content_main.xml" value="0.40816326530612246" />
+        <entry key="app/src/main/res/layout-sw600dp-land/fragment_detail_property.xml" value="0.2789115646258503" />
+        <entry key="app/src/main/res/layout-sw600dp-land/item_property.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_addproperty.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_connexion.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.3880208333333333" />
+        <entry key="app/src/main/res/layout/appbar_main.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.3880208333333333" />
+        <entry key="app/src/main/res/layout/description_layout.xml" value="0.21354166666666666" />
+        <entry key="app/src/main/res/layout/filter_query_dialog.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.2078125" />
+        <entry key="app/src/main/res/layout/fragment_detail_property.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_map.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.36041666666666666" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/fragment_property_list.xml" value="0.3880208333333333" />
+        <entry key="app/src/main/res/layout/fragment_simulator.xml" value="0.3880208333333333" />
+        <entry key="app/src/main/res/layout/item_photo_detail.xml" value="0.2078125" />
+        <entry key="app/src/main/res/layout/item_property.xml" value="0.3880208333333333" />
+        <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/popup.xml" value="0.36041666666666666" />
+        <entry key="app/src/main/res/layout/popup_image.xml" value="0.36041666666666666" />
+        <entry key="app/src/main/res/layout/toolbar.xml" value="0.3880208333333333" />
+        <entry key="app/src/main/res/layout/window_map_infos.xml" value="0.36041666666666666" />
+        <entry key="app/src/main/res/menu/drawer_menu.xml" value="0.2078125" />
+        <entry key="app/src/main/res/menu/toolbar_menu.xml" value="0.335" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launch_logo.xml" value="0.1705" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1705" />
+      </map>
+    </option>
+  </component>
+  <component name="EntryPointsManager">
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="butterknife.OnClick" />
+    </list>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_12" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

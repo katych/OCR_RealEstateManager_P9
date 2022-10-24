@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_york_night"
+    tools:context=".ui.activity.ConnexionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/opacity"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/width_300"
+            android:layout_height="@dimen/margin_150"
+            android:layout_marginTop="@dimen/margin_150"
+            app:srcCompat="@drawable/logo"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/text_connexion_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_on_real_estate_manager" />
+
+        <LinearLayout
+            android:id="@+id/linear_connection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInput"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="@dimen/width_300"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/icons"
+                android:layout_margin="@dimen/margin_10"
+                app:hintTextColor="@color/icons">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_connexion_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/your_name"
+                    android:inputType="text"
+                    style="@style/text_edit_connection"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="@dimen/width_300"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:textColorHint="@color/icons"
+                app:hintTextColor="@color/icons">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_connexion_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/your_password"
+                    android:inputType="textPassword"
+                    style="@style/text_edit_connection" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/checkbox_connexion"
+                android:layout_width="@dimen/margin_150"
+                android:layout_height="wrap_content"
+                android:text="@string/remember_me"
+                android:textColor="@color/icons"
+                android:textStyle="bold"
+                app:buttonTint="@color/icons" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/width_300"
+                android:layout_height="@dimen/height_50"
+                android:layout_marginTop="@dimen/margin_20"
+                android:clickable="true"
+                android:focusable="true"
+              >
+
+                <com.github.ybq.android.spinkit.SpinKitView
+                    android:id="@+id/loading_indicator"
+                    style="@style/SpinKitView.Circle"
+                    android:layout_width="@dimen/width_30dp"
+                    android:layout_height="@dimen/width_30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_marginEnd="@dimen/margin_10"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:visibility="gone"
+                    app:SpinKit_Color="@color/icons" />
+
+                <Button
+                    android:id="@+id/connexion_button"
+                    android:layout_width="@dimen/width_200"
+                    android:layout_height="@dimen/height_50"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:onClick="onClickConnexionButton"
+                    android:padding="@dimen/margin_2"
+                    android:text="@string/connexion"
+                    android:textColor="@color/icons"
+                    android:textSize="@dimen/text_18" />
+
+                <Button
+                    android:id="@+id/register_button"
+                    android:layout_width="@dimen/width_200"
+                    android:layout_height="@dimen/height_50"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="31dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:onClick="onClickRegisterButton"
+                    android:padding="@dimen/margin_2"
+                    android:text="@string/register"
+                    android:textColor="@color/icons"
+                    android:textSize="@dimen/text_18" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
