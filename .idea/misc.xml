@@ -5,7 +5,12 @@
       <map>
         <entry key="../../../layout/custom_preview.xml" value="0.11810551558752998" />
         <entry key="../Library/Android/sdk/platforms/android-32/data/res/layout/simple_spinner_item.xml" value="0.21354166666666666" />
+        <entry key="app/src/main/res/drawable-hdpi/drawable.xml" value="0.137" />
+        <entry key="app/src/main/res/drawable-mdpi/drawable.xml" value="0.137" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1705" />
+        <entry key="app/src/main/res/drawable-xhdpi/drawable.xml" value="0.137" />
+        <entry key="app/src/main/res/drawable-xxhdpi/drawable.xml" value="0.137" />
+        <entry key="app/src/main/res/drawable-xxxhdpi/drawable.xml" value="0.137" />
         <entry key="app/src/main/res/drawable/border_radius.xml" value="0.213" />
         <entry key="app/src/main/res/drawable/ic_baseline_camera_alt_24.xml" value="0.27" />
         <entry key="app/src/main/res/drawable/ic_camera.xml" value="0.266" />
