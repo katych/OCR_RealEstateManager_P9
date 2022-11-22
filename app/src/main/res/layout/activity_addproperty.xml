@@ -48,11 +48,11 @@
                       android:text="@string/type"
                       style="@style/edit_text_add"
                       android:textColor="@color/primary"
-                      android:drawableStart="@drawable/ic_type"
                       android:drawableTint="@color/primary"
                       android:drawablePadding="@dimen/margin_5"
                       android:layout_gravity="center"
-                      tools:ignore="UnusedAttribute" />
+                      tools:ignore="UnusedAttribute"
+                      app:drawableStartCompat="@drawable/ic_type" />
 
                     <Spinner
                         android:id="@+id/spinner_type"

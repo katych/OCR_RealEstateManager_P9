@@ -56,7 +56,7 @@ class MainActivity : BaseActivity(), PropertyListFragment.OnClickEstateListener,
         navController = findNavController(R.id.navHostFragment)
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_property, R.id.logout, R.id.nav_map, R.id.nav_profile, R.id.nav_simulation
+                R.id.nav_property, R.id.logout, R.id.nav_map, R.id.nav_simulation
             ), drawer_layout
         )
 

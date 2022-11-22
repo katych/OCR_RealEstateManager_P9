@@ -115,6 +115,7 @@ public class Utils {
         }else number = Math.min(Double.parseDouble(text), Double.MAX_VALUE);
         return number;
     }
+
     public static long  convertDateToLong(String date) throws ParseException {
         SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy", Locale.FRANCE);
         if (date != ""){

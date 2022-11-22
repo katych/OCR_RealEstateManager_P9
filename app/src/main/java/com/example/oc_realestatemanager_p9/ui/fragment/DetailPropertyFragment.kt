@@ -11,6 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.example.oc_realestatemanager_p9.BuildConfig
 import com.example.oc_realestatemanager_p9.R
 import com.example.oc_realestatemanager_p9.base.BaseFragment
@@ -25,6 +26,7 @@ import com.example.oc_realestatemanager_p9.viewmodel.PhotoListViewModel
 import com.example.oc_realestatemanager_p9.viewmodel.PropertyListViewModel
 import kotlinx.android.synthetic.main.fragment_detail_property.*
 import timber.log.Timber
+
 
 class DetailPropertyFragment: BaseFragment(), DetailAdapter.onClickItemListener {
 
@@ -109,13 +111,15 @@ class DetailPropertyFragment: BaseFragment(), DetailAdapter.onClickItemListener 
             button_update.visibility = View.GONE
         }
 
-        val streetText = Utils.makeStreetString(property.street, property.town)
-        val uri = "https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=600x300&maptype=roadmap&markers=color:red%7Clabel:P%7C"+ streetText +"&center=" + streetText + "&key=" + BuildConfig.MAPS_API_KEY
+        val streetText = Utils.makeStreetString(property.street,property.town)
+        val uri = "https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=200x200&maptype=roadmap&markers=color:red%7Clabel:P%7C"+
+                streetText +"&center=" + streetText + "&key=" + BuildConfig.MAPS_API_KEY
         Glide.with(this)
             .load(uri)
-            .centerCrop()
+            .apply(RequestOptions.centerCropTransform())
             .into(mini_Map)
     }
+
 
     private fun showCompromiseAndSoldText(text : String?, textView : TextView, layout : LinearLayout){
         if (text != null && text != ""){

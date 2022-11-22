@@ -16,12 +16,6 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_profile"
-        android:name="com.example.oc_realestatemanager_p9.ui.fragment.ProfileFragment"
-        android:label="Profile"
-        tools:layout="@layout/fragment_profile" />
-
-    <fragment
         android:id="@+id/nav_simulation"
         android:name="com.example.oc_realestatemanager_p9.ui.fragment.SimulatorFragment"
         android:label="Credit simulator"

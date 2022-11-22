@@ -1,5 +1,4 @@
 package com.example.oc_realestatemanager_p9.ui.activity
-
 import android.Manifest
 import android.annotation.SuppressLint
 import android.app.AlertDialog
@@ -133,7 +132,7 @@ class AddPropertyActivity :  BaseActivity(), DetailAdapter.onClickItemListener {
         spinner_type.onItemSelectedListener = object : OnItemSelectedListener {
             override fun onItemSelected(
                 parent: AdapterView<*>?,
-                view: View,
+                view: View?,
                 position: Int,
                 id: Long
             ) {

@@ -41,7 +41,7 @@ public class UtilsTest {
 
     @Test
     public void getTodayDateTest() {
-        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.FRENCH);
+        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd", Locale.FRENCH);
         String date = dateFormat.format(new Date());
         assertEquals(date, getTodayDate());
     }
@@ -106,10 +106,10 @@ public class UtilsTest {
 
     @Test
     public void  convertDateToLongTest() throws ParseException {
-        String date1 = "24/02/2020";
-        String date2 = "26/02/2020";
+        String date1 = "20/11/2022";
+        String date2 = "22/11/2022";
 
-        assertEquals(1582671600000L, convertDateToLong(date2));
-        assertEquals(1582498800000L, convertDateToLong(date1));
+        assertEquals(1669064400000L, convertDateToLong(date2));
+        assertEquals(1668891600000L, convertDateToLong(date1));
     }
 }
